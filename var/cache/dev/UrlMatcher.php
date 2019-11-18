@@ -8,8 +8,10 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
-        '/wild' => [[['_route' => 'wild_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'wild_show_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, false, false, null]],
+        '/' => [
+            [['_route' => 'app_index', '_controller' => 'App\\Controller\\DefaultController::index'], null, null, null, false, false, null],
+            [['_route' => 'wild_show_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, false, false, null],
+        ],
     ],
     [ // $regexpList
         0 => '{^(?'
