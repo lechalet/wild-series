@@ -51,7 +51,7 @@ class __TwigTemplate_feff5b63a6ebe95f4fd7e06fc96c4239695dd4864fc41b38e91646f5970
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header"));
 
         echo " 
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light  bg-light\">
   <a class=\"navbar-brand\" href=\"#\">Navbar</a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
@@ -84,7 +84,7 @@ class __TwigTemplate_feff5b63a6ebe95f4fd7e06fc96c4239695dd4864fc41b38e91646f5970
     public function getSourceContext()
     {
         return new Source("{% block header %} 
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light  bg-light\">
   <a class=\"navbar-brand\" href=\"#\">Navbar</a>
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
