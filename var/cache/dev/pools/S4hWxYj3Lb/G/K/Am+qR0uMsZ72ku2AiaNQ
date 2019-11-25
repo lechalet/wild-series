@@ -15,6 +15,16 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
             'name' => [
                 'wild_show',
             ],
+            'requirements' => [
+                [
+                    'slug' => '[a-z0-9-]+',
+                ],
+            ],
+            'defaults' => [
+                [
+                    'slug' => 'Aucune série sélectionnée',
+                ],
+            ],
         ],
     ],
     [

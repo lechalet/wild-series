@@ -18,8 +18,13 @@ public function index() :Response
         ]);
     }
     /**
-    * @Route("/wild/show/{slug}", name="wild_show")
+    * @Route("/wild/show/{slug}",
+    *     requirements={"slug"= "[a-z0-9-]+"},
+    *     defaults={"slug"= "Aucune série sélectionnée"},
+    *     name="wild_show"
+    * )
     */
+    
     public function show($slug): Response
     {
         $var = str_replace("-", " ", "$slug");

@@ -16,13 +16,13 @@ return [
     [ // $regexpList
         0 => '{^(?'
                 .'|/_error/(\\d+)(?:\\.([^/]++))?(*:35)'
-                .'|/wild/show/([^/]++)(*:61)'
+                .'|/wild/show(?:/([a-z0-9-]+))?(*:70)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
         35 => [[['_route' => '_twig_error_test', '_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        61 => [
-            [['_route' => 'wild_show', '_controller' => 'App\\Controller\\WildController::show'], ['slug'], null, null, false, true, null],
+        70 => [
+            [['_route' => 'wild_show', 'slug' => 'Aucune série sélectionnée', '_controller' => 'App\\Controller\\WildController::show'], ['slug'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
