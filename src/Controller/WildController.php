@@ -1,6 +1,5 @@
 <?php
 // src/Controller/WildController.php
-
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,15 +14,16 @@ Class WildController extends AbstractController
 public function index() :Response
     {
         return $this->render('wild/index.html.twig', [
-            'welcome' => 'Bienvenue sur Wild Series',
-    ]);
+                'welcome' => 'Bienvenue sur Wild Series',
+        ]);
     }
-
-  /**
+    /**
     * @Route("/wild/show/{slug}", name="wild_show")
-   */
-  public function show(int $slug): Response
-  {
-       return $this->render('wild/show.html.twig', ['slug' => $slug]);
-  } 
+    */
+    public function show($slug): Response
+    {
+        $var = str_replace("-", " ", "$slug");
+        $var2 = ucwords($var);
+        return $this->render('wild/show.html.twig', ['slug' => $var2]);
+    }
 }
